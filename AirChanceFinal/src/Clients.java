@@ -57,7 +57,7 @@ public class Clients {
 		String pays=LectureClavier.lireChaine();
 
 		Statement req = conn.createStatement();
-		int insert = req.executeUpdate("INSERT INTO Clients VALUES("+numCl+","+numpass+","+pointcumul+",'"+nom+"','"+prenom+"',"+num+",'"+rue+"',"+codep+",'"+ville+"','"+pays+"')");
+		int insert = req.executeUpdate("INSERT INTO Clients VALUES("+numCl+",'"+numpass+"',"+pointcumul+",'"+nom+"','"+prenom+"',"+num+",'"+rue+"',"+codep+",'"+ville+"','"+pays+"')");
 		if(insert==0) {
 			System.out.println("Erreur!");
 		}else {
